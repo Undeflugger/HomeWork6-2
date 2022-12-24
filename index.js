@@ -5,8 +5,7 @@ function uniqueElement (arrayOne, arrayTwo){
     if (!Array.isArray(arrayOne) || !Array.isArray(arrayTwo) ) {
         console.log('Помилка! Введенний вами тип данних не є масивом')
         return uniqueArray
-
-    } else {
+    }
         for (let i=0; i< arrayOne.length; i++){
         let element = arrayOne[i];
         if (!arrayTwo.includes(element)){
@@ -20,7 +19,6 @@ function uniqueElement (arrayOne, arrayTwo){
         }
     }
     return uniqueArray;
-}
 }
 
 console.log(uniqueElement(myFirstArray, mySecondArray));
